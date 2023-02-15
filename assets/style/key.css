@@ -1,0 +1,38 @@
+.key{
+    cursor:pointer;
+    border-radius: var(--radius);
+    border: none;
+    box-sizing: border-box;
+    font-family: var(--family), sans-serif;
+    font-weight: var(--weigth);
+    font-size: var(--size-rg);
+    padding: var(--sp-sm) var(--sp-xs) var(--sp-xs) var(--sp-xs);
+    width: 100%;
+}
+.key1{
+    background-color: var(--color-key1);
+    box-shadow: inset 1px -8px 2px -3px var(--shadow-key1);
+    color: var(--primary);
+}
+
+.key2{
+    background-color: var(--color-key2);
+    box-shadow: inset 1px -8px 2px -3px var(--shadow-key2);
+    color: var(--secondary);
+}
+
+.key3{
+    background-color: var(--color-key3);
+    box-shadow: inset 1px -8px 2px -3px var(--shadow-key3);
+    color: var(--secondary);
+}
+
+.key1:active{
+    filter: brightness(1.25);
+}
+.key2:active{
+    filter: brightness(1.25);
+}
+.key3:active{
+    filter: brightness(1.25);
+}
