@@ -15,13 +15,10 @@
     --size-xs: 0.5rem;
     --radius: 4px;
 
-    --mobile: 375px;
-    --desktop: 1440px;
-
-    --sp-xl: 5rem;
-    --sp-lg: 2.5rem;
-    --sp-md: 1.5rem;
-    --sp-rg: 1rem;
+    --sp-xl: 2.5rem;
+    --sp-lg: 1.5rem;
+    --sp-md: 1rem;
+    --sp-rg: 0.75rem;
     --sp-sm: 0.5rem;
     --sp-xs: 0.25rem;
     
@@ -59,7 +56,8 @@ main{
     margin: auto;
     padding: var(--sp-sm);
     text-align: center;
-    width: 460px;
+    max-width: 460px;
+    width: 100%;
 }
 
 /*FOOTER*/
@@ -68,11 +66,24 @@ footer{
     align-items: center;
     flex-direction: column;
     font-size: var(--size-sm);
-    margin: var(--sp-sm);
+    margin: var(--sp-sm) auto;
 }
 footer span{
     margin: var(--sp-xs) 0;
 }
 footer a{
     color: var(--text);
+}
+
+@media screen and (max-width:375px){
+    body{
+        font-size: var(--size-sm);
+    }
+    main{
+        max-width: 325px;
+        padding: 0;
+    }
+    footer{
+        font-size: var(--size-xs);
+    }
 }

@@ -10,10 +10,21 @@
     padding: var(--sp-sm);
     height: 400px;
 }
-
 .keypad__container--bottom{
     grid-column: span 4;
     display: grid;
     gap: var(--sp-sm);
     grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (max-width:375px){
+    .keypad{
+        grid-template-columns: repeat(4, 64px);
+        gap: var(--sp-xs);
+        height: 450px;
+        padding: var(--sp-xs);
+    }
+    .keypad__container--bottom{
+        height: 100%;
+    }
 }

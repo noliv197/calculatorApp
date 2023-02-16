@@ -14,13 +14,11 @@
     box-shadow: inset 1px -8px 2px -3px var(--shadow-key1);
     color: var(--primary);
 }
-
 .key2{
     background-color: var(--color-key2);
     box-shadow: inset 1px -8px 2px -3px var(--shadow-key2);
     color: var(--secondary);
 }
-
 .key3{
     background-color: var(--color-key3);
     box-shadow: inset 1px -8px 2px -3px var(--shadow-key3);
@@ -35,4 +33,15 @@
 }
 .key3:active{
     filter: brightness(1.25);
+}
+
+@media screen and (max-width:375px){
+    .key{
+        padding: var(--sp-xs);
+        height: 80%;
+    }
+    .key2,
+    .key3{
+        font-size: var(--size-sm);
+    }
 }
