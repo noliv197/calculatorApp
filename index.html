@@ -27,28 +27,28 @@
       </div>
     </section>
     <section class="visor">
-      <output data-result></output>
+      <output data-result value="0">0</output>
     </section>
     <section class="keypad">
-        <button class="key key1" data-number value="7">7</button>
-        <button class="key key1" data-number value="8">8</button>
-        <button class="key key1" data-number value="9">9</button>
+        <button class="key key1" data-char value="7">7</button>
+        <button class="key key1" data-char value="8">8</button>
+        <button class="key key1" data-char value="9">9</button>
         <button class="key key2" data-operator="erase">DEL</button>
 
-        <button class="key key1" data-number value="4">4</button>
-        <button class="key key1" data-number value="5">5</button>
-        <button class="key key1" data-number value="6">6</button>
-        <button class="key key1" data-operator="sum">+</button>
+        <button class="key key1" data-char value="4">4</button>
+        <button class="key key1" data-char value="5">5</button>
+        <button class="key key1" data-char value="6">6</button>
+        <button class="key key1" data-char data-operator="sum" value="+">+</button>
 
-        <button class="key key1" data-number value="1">1</button>
-        <button class="key key1" data-number value="2">2</button>
-        <button class="key key1" data-number value="3">3</button>
-        <button class="key key1" data-operator="substraction">-</button>
+        <button class="key key1" data-char value="1">1</button>
+        <button class="key key1" data-char value="2">2</button>
+        <button class="key key1" data-char value="3">3</button>
+        <button class="key key1" data-char data-operator="substraction" value="-">-</button>
         
-        <button class="key key1" data-operator="float">.</button>
-        <button class="key key1" data-number value="0">0</button>
-        <button class="key key1" data-operator="divide">&#xF7</button>
-        <button class="key key1" data-operator="multiple">x</button>
+        <button class="key key1" data-char data-operator="float" value=",">.</button>
+        <button class="key key1" data-char value="0">0</button>
+        <button class="key key1" data-char data-operator="divide" value="/">&#xF7</button>
+        <button class="key key1" data-char data-operator="multiple" value="x">x</button>
         
         <div class="keypad__container--bottom">
           <button class="key key2" data-operator="clean">RESET</button>
@@ -62,5 +62,6 @@
   </footer>
 
   <script src="assets/app/switch.js" type="module"></script>
+  <script src="assets/app/operations.js" type="module"></script>
 </body>
 </html>
