@@ -12,7 +12,7 @@ let operators = [',','+','-','/','x']
 
 delButton.addEventListener('click',() => del(output))
 resetButton.addEventListener('click', () => reset(output))
-calcButton.addEventListener('click',()=> calculate(output,'-'))
+calcButton.addEventListener('click',()=> calculate(output,'-')) // change later
 
 charsArray.forEach(element => {
     element.addEventListener('click', ()=>{
