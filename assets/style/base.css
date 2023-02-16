@@ -1,9 +1,10 @@
 @import url("reset.css");
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
-@import url("visor.css");
 @import url("key.css");
-@import url("calculator.css");
 @import url("header.css");
+@import url("switch.css");
+@import url("visor.css");
+@import url("keypad.css");
 
 /*VARIABLES*/
 :root{
@@ -26,7 +27,8 @@
     
     --primary: hsl(221, 14%, 31%);
     --secondary: hsl(0, 0%, 100%);
-    --thrid: hsl(221, 14%, 31%);
+    --third: hsl(0, 0%, 100%);
+    --text: hsl(0, 0%, 100%);
 
     --bkg-main: hsl(222, 26%, 31%);
     --bkg-keypad: hsl(223, 31%, 20%);
@@ -48,7 +50,7 @@ html{
 body{
     background-color: var(--bkg-main);
     box-sizing: border-box;
-    color: var(--secondary);
+    color: var(--text);
     font-family: var(--family), sans-serif;
     font-weight: var(--weigth);
     font-size: var(--size-rg);
@@ -72,5 +74,5 @@ footer span{
     margin: var(--sp-xs) 0;
 }
 footer a{
-    color: var(--secondary);
+    color: var(--text);
 }

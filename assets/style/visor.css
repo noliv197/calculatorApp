@@ -1,0 +1,8 @@
+.visor{
+    background-color: var(--bkg-screen);
+    border-radius: var(--radius);
+    margin: var(--sp-sm) 0;
+    padding: var(--sp-rg);
+    text-align: end;
+    height: 32px;
+}

@@ -1,14 +1,5 @@
-.visor{
-    background-color: var(--bkg-screen);
-    border-radius: var(--radius);
-    margin: var(--sp-sm) 0;
-    padding: var(--sp-rg);
-    text-align: end;
-    height: 32px;
-}
-
-.keys{
-    background-color: var(--bkg-screen);
+.keypad{
+    background-color: var(--bkg-keypad);
     border-radius: var(--radius);
     box-sizing: border-box;
     display: grid;
@@ -20,7 +11,7 @@
     height: 400px;
 }
 
-.container--bottom{
+.keypad__container--bottom{
     grid-column: span 4;
     display: grid;
     gap: var(--sp-sm);

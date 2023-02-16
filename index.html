@@ -12,17 +12,16 @@
   <main>
     <section class="header">
       <h1>calc</h1>
-      <div class="container--theme">
+      <div class="header__container--theme">
         <h2>THEME</h2>
         <div>
           <span>1</span>
           <span>2</span>
           <span>3</span>
-          <div class="container--switch">
-            <input type="checkbox" id='switch1'/>
-            <input type="checkbox" id='switch2'/>
-            <input type="checkbox" id='switch3'/>
-            <label for="switch1"></label>
+          <div class="header__container--switch">
+            <input class="visible" type="radio" name="toggle" id="one" data-theme="theme1" checked/>
+            <input class="invisible" type="radio" name="toggle" id="two" data-theme="theme2"/>
+            <input class="invisible" type="radio" name="toggle" id="three" data-theme="theme3"/>
           </div>
         </div>
       </div>
@@ -30,7 +29,7 @@
     <section class="visor">
       <output data-result></output>
     </section>
-    <section class="keys">
+    <section class="keypad">
         <button class="key key1" data-number value="7">7</button>
         <button class="key key1" data-number value="8">8</button>
         <button class="key key1" data-number value="9">9</button>
@@ -51,7 +50,7 @@
         <button class="key key1" data-operator="divide">&#xF7</button>
         <button class="key key1" data-operator="multiple">x</button>
         
-        <div class="container--bottom">
+        <div class="keypad__container--bottom">
           <button class="key key2" data-operator="clean">RESET</button>
           <button class="key key3" data-operator="calculate">=</button>
         </div>
@@ -61,5 +60,7 @@
     <span>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</span>
     <span>Coded by <a href="https://github.com/noliv197/calculatorApp" target="_blank">Natalia Oliveira</a>.</span>
   </footer>
+
+  <script src="assets/app/switch.js" type="module"></script>
 </body>
 </html>
