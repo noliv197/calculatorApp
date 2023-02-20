@@ -34,7 +34,7 @@ export function calculate(output){
     output.value = convertToDot(output.value)
     let operator = findOperator(output.value)
     let [num1, num2] = getNumbers(output.value,operator)
-    console.log(operator)
+    console.log(num1,num2)
     let result
     switch (operator) {
         case '+': result =  sum(num1, num2)
@@ -60,12 +60,6 @@ function convertToDot(str){
 function convertToComma(str){
     return (String(str).indexOf('.') !== -1 ? String(str).replace('.',',') : str)
 }
-function findOperator(str){
-    let regex = /[^\d\.]/
-    let result
-    str[0] !== '-' ? result = str.match(regex) : result = str.substring(1).match(regex)
-    return (result !== null ? result[0] : result)
-}
 function getNumbers(str,operator){
     return(
         operator == '-' && str[0] == '-' ? 
@@ -73,7 +67,21 @@ function getNumbers(str,operator){
         str.split(operator)
     )
 }
+export function findOperator(str){
+    let regex = /[^\d\.]/
+    let result
+    str[0] !== '-' ? result = str.match(regex) : result = str.substring(1).match(regex)
+    return (result !== null ? result[0] : result)
+}
+export function checkEquation(str){
+    let regex = /[^\d\.,]/
+    let result  
+    str[0] !== '-' ? result = str.split(regex) : result = str.substring(1).split(regex)
+    if(result.indexOf('') !== -1) result.splice(result.indexOf(''),1)
+    console.log(result)
+    return result.length 
+}
 
-function checkLastChar(element){
+export function checkFloat(str){
     
 }
