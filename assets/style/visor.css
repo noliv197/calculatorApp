@@ -5,4 +5,17 @@
     padding: var(--sp-rg);
     text-align: end;
     height: 32px;
+    overflow: auto hidden;
+}
+
+::-webkit-scrollbar {
+    height: 10px;
+}
+::-webkit-scrollbar-track{
+    background: var(--bkg-screen);
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--bkg-keypad);
+    border-radius: var(--radius);
 }
